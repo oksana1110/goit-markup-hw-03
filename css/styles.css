@@ -40,22 +40,6 @@ body{
        
   /*----------Header.index---------*/
   
-
-   .header-list,
-   .header-address {
-       display: flex;
-   }
-
-  
- /* .header-list .link:last-child{
-       margin-right: 0px;
-   }
-
-.header-list .link+.link{
-    margin-left: 50px;
-}*/
-
-
   .header-logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -87,12 +71,7 @@ a.header-logo:focus{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;}
-
-  header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }     
+     
 .header-link:hover,
 .header-link:focus{
     color:var(--active-color);}
@@ -104,25 +83,45 @@ a.header-logo:focus{
  .header-address-tel:focus{
     color: var(--active-color);}
 
+  .header-list,
+   .header-address {
+            display: inline-flex;
+        }
+    .header-nav{
+        display: flex;
+    }
+    
+        /* .header-list .link:last-child{
+           margin-right: 0px;
+       }
+    
+    .header-list .link+.link{
+        margin-left: 50px;
+    }*/
+
+ header {
+     display: flex;
+    align-items: center;
+    justify-content: space-around;}
+
 /*----------Hero.index---------*/
-.hero { background: #2F303A;}
+.hero { background: #2F303A;
+text-align: center;
+padding-top: 200px;
+padding-bottom: 200px;}
 
 .hero-title {
         margin-bottom: 30px;
-
-
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;    
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;    
         color:var(--primary-color);}
 
 .btn {
     display: inline-block;
-        align-items: center;
-        text-align: center;
+    align-items: center;
     padding: 10px; 24px;
     font-family: inherit;
     font-weight: 700;
@@ -232,6 +231,7 @@ a.header-logo:focus{
      letter-spacing: 0.03em;}
 
 .team-third-title {
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;     
     text-align: center;
@@ -244,14 +244,16 @@ a.header-logo:focus{
 .footer-logo:hover{color: var(--active-color);}
 .footer-logo:focus{color: var(--active-color);}
 .auth-address {font-style: normal;}
- .address-link {     
+ .address-link {   
+    padding-bottom: 12px;  
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71; 
     letter-spacing: 0.03em;   
     color: var(--primary-color);}
 
-.address-item {    
+.address-item {   
+    padding-bottom: 12px; 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;    
@@ -263,9 +265,16 @@ a.header-logo:focus{
 .address-item:hover,
 .address-item:focus{color: var(--active-color-two);}
 
+.footer-logo{
+    padding-bottom: 28px;
+    padding-top: 39px;
+}
+
 /*----------Filter.portfolio--------*/
 .filter-button {
-    
+    margin-top: 94px;
+    margin-bottom: 34px;
+    margin-right: 8px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -280,6 +289,15 @@ a.header-logo:focus{
     color: var(--primary-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;}
+  .filter {
+      display: flex;
+      justify-content: center;      
+          }
+.filter.filter-button:last-child{
+    margin-right: 0px;
+}
+    
+
 /*----------Main.portfolio--------*/
 .project-title {
     padding-top: 30px;
@@ -300,16 +318,6 @@ a.header-logo:focus{
 .project-link{
     text-decoration: none;}
 
-    .filter{
-        display: flex;
-        justify-content: center;
-        padding-top: 94px;
-        padding-bottom: 94px;
-        padding-right: 30px;
-    }
-
-
-
     .project{
         display: flex;
         flex-wrap: wrap;
@@ -323,6 +331,6 @@ a.header-logo:focus{
 .project-list:nth-child(3n) {
     margin-right: 0px;
 }
-.project-list:nth-child(-n+3) {
+.project-list:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
