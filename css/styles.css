@@ -71,14 +71,20 @@ a.header-logo:focus{
 .header-list .link.current{
     color: var(--active-color);}
 
-.header-list .header-link{
-    margin-right: 50px;
-    padding: 10px 0px;
+.header-link{
+    
     font-family: inherit;        
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;}
+
+    .header-lists{margin-right: 50px;
+        padding: 10px 0px;}
+
+ .header-lists:last-child {
+     margin-right: 0px;
+ }
      
 .header-link:hover,
 .header-link:focus{
@@ -297,8 +303,7 @@ padding: 60px 0px;}
 
 
 /*----------Filter.portfolio--------*/
-.filter-button {
-    margin-right: 8px;
+.filter-button {    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -320,10 +325,12 @@ padding: 60px 0px;}
       justify-content: center; 
       margin-bottom: 34px;
           }
-.filter> li:last-child{
-    margin-right: 0px;
+.filter-buttons{
+    margin-right: 8px;
 }
-    
+   .filter-buttons:last-child{
+    margin-right: 0px;
+   }
 
 /*----------Main.portfolio--------*/
 .project-title {
