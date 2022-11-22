@@ -72,12 +72,12 @@ a.header-logo:focus{
     color: var(--active-color);}
 
 .header-link{
-    
-    font-family: inherit;        
-    font-weight: 500;
+    font-family: inherit;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;}
+    line-height: 100%;
+    letter-spacing: 0.02em;;
+    color: #212121}
 
     .header-lists{margin-right: 50px;
         padding: 10px 0px;}
@@ -266,7 +266,7 @@ padding-bottom: 200px;
 padding: 60px 0px;}
 
 .footer-logoo {
-    margin-bottom: 28px;
+    
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -275,20 +275,21 @@ padding: 60px 0px;}
     color: var(--active-color-two);
 }
 
-.footer-logo {color: var(--primary-color);}
+
+.footer-logo {color: var(--primary-color);
+              margin-bottom: 28px;}
+
 .footer-logo:hover{color: var(--active-color);}
 .footer-logo:focus{color: var(--active-color);}
 .auth-address {font-style: normal;}
- .address-link {   
-    margin-bottom: 12px;  
+ .address-link {        
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71; 
     letter-spacing: 0.03em;   
     color: var(--primary-color);}
 
-.address-item {   
-    margin-bottom: 12px; 
+.address-item {       
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;    
@@ -299,6 +300,10 @@ padding: 60px 0px;}
 
 .address-item:hover,
 .address-item:focus{color: var(--active-color-two);}
+
+.auth-addr{
+    margin-bottom: 12px;
+}
 
 
 
@@ -334,7 +339,6 @@ padding: 60px 0px;}
 
 /*----------Main.portfolio--------*/
 .project-title {
-    padding-top: 20px;
     padding-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -343,7 +347,6 @@ padding: 60px 0px;}
     color: #212121;}
 
 .project-description {
-    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;          
     letter-spacing: 0.03em;    
@@ -371,6 +374,7 @@ padding: 60px 0px;}
 }
 
 .project-border{
+    padding: 20px 24px ;
     border-bottom: 1px rgba(0, 0, 0, 0.14) solid;
     border-left: 1px rgba(0, 0, 0, 0.14) solid;
     border-right: 1px rgba(0, 0, 0, 0.14) solid;
